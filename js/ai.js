@@ -49,29 +49,21 @@ exports.ai = async (context, players) => {
 
   if(x - 1 >= 0 && Context.grid[x - 1][y] == false)
   {
-    console.log(Context.grid[x - 1][y]);
-    console.log("WEST");
     return WEST;
   }
 
   if(x + 1 < context.size && Context.grid[x + 1][y] == false)
   {
-    console.log(Context.grid[x + 1][y]);
-    console.log("EAST");
     return EAST;
   }
 
   if(y + 1 >= 0 && Context.grid[x][y + 1] == false)
   {
-    console.log(Context.grid[x][y + 1]);
-    console.log("SOUTH");
     return SOUTH;
   }
 
   if(y - 1 < context.size && Context.grid[x][y - 1] == false)
   {
-    console.log(Context.grid[x][y + 1]);
-    console.log("NORTH");
     return NORTH;
   }
 
